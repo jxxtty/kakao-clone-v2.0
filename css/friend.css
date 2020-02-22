@@ -1,0 +1,79 @@
+/*class 명에 friend가 들어가는 애들을 위해 따로 만들어 준거*/
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  width: 50px;
+  border-radius: 38%;
+  margin-right: 15px;
+}
+
+.friend__avatar.g-avatar {
+  width: 70px;
+}
+
+.friend__avatar.m-avatar {
+  width: 60px;
+}
+
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend__content .friend__name {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.friend__content .friend__status,
+.friend__content .friend__bottom-text {
+  opacity: 0.6;
+}
+
+/* chat 화면에만 적용되는 부분 */
+.friend__content .friend__bottom-text {
+  font-size: 14px;
+}
+/* friend 화면에만 적용되는 부분 */
+.friend__content .friend__status {
+  font-size: 12px;
+}
+
+.friend .chat__timestamp {
+  font-size: 12px;
+  opacity: 0.6;
+}
+/* 위에 쟤를 쓰는대신에
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp {
+  opacity: 0.6;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp {
+  font-size: 12px;
+}
+이렇게 해줘도 돼 
+(위에 friend화면에만 적용되는거, chat화면에만 적용되는거 구분해주려고 따로 쓴거임)
+*/
+
+.friend .friend__now-listening {
+  border: 2px solid #52e084;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+/*opacity를 위에 같이쓰면 테두리의 연두색 선도 opacity의 영향을 받아서 따로 써줌*/
+.friend__now-listening span {
+  opacity: 0.6;
+}
+
+.friend__now-listening i {
+  font-size: 12px;
+  color: #52e084;
+}
